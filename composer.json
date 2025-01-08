@@ -1,8 +1,7 @@
 {
-    "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "jpcaparas/demo-laravel-api-platform",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Demo Laravel application showcasing how to build a RESTful API for managing video game collections using API Platform and Laravel.",
     "keywords": [
         "laravel",
         "framework"
