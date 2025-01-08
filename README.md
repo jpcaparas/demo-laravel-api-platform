@@ -8,14 +8,13 @@ This is a demo Laravel application showcasing how to build a RESTful API for man
 
 ## Features
 
-- RESTful API endpoints for managing video games
-- Integration with API Platform for standardized API responses
-- Game entity with properties like title, genre, platform, release date
-- Collection management features
-- Full CRUD operations
-- API documentation via OpenAPI/Swagger
-- Authentication and authorization
-- Pagination and filtering
+- [x] RESTful API endpoints for managing video games
+- [x] Integration with API Platform for standardized API responses
+- [x] Game entity with properties like title, description, collection, reviews, and release date
+- [x] Full CRUD operations
+- [x] API documentation via OpenAPI/Swagger
+- [ ] Authentication and authorization
+- [ ] Pagination and filtering
 
 ## Requirements
 
