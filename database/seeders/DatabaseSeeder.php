@@ -23,5 +23,9 @@ class DatabaseSeeder extends Seeder
         Collection::factory(50)->create();
 
         Review::factory(50)->create();
+
+        $this->call([
+            GameCollectionSeeder::class
+        ]);
     }
 }

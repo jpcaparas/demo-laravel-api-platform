@@ -15,6 +15,11 @@ class Game extends Model
         'release_date',
     ];
 
+    public function collections()
+    {
+        return $this->belongsToMany(Collection::class);
+    }
+
     public function reviews()
     {
         return $this->hasMany(Review::class);
