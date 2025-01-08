@@ -59,6 +59,13 @@
                     </header>
 
                     <main class="mt-6">
+                        <div class="mt-6 flex justify-center">
+                            <p style="margin-bottom: 1em;"">
+                                <a href="{{ url('/api') }}" class="rounded-md bg-[#FF2D20] px-8 py-4 text-xl font-semibold transition hover:bg-[#e0261c] focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                                    🌐 Visit the API
+                                </a>
+                            </p>
+                        </div>
                         <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
                             <div class="flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] lg:p-10 dark:bg-zinc-900 dark:ring-zinc-800">
                                 <h1 class="text-2xl font-semibold text-black dark:text-white">Game Collection API Platform</h1>

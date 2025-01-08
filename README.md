@@ -1,8 +1,10 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://api-platform.com/docs/laravel/images/empty-docs.png" width="600" alt="API Platform example"></a></p>
+
 # API Platform for Laravel Demo (Game Collection)
 
-This is a demo Laravel application showcasing how to build a RESTful API for managing video game collections using API Platform and Laravel.
+This is a demo Laravel application showcasing how to build a RESTful API for managing video game collections using [API Platform](https://api-platform.com/docs/laravel/) and Laravel.
 
 ## Features
 
@@ -22,21 +24,48 @@ This is a demo Laravel application showcasing how to build a RESTful API for man
 - Laravel 11.x
 - Database (MySQL by default)
 
-## Installation
+## Setup
 
+### Clone the repository
 ```bash
-# Clone the repository
 git clone https://github.com/jpcaparas/demo-laravel-api-platform.git
+```
 
-# Install dependencies
+### Install dependencies
+```
 composer install
+```
 
-# Configure environment
+### Configure environment
+```bash
 cp .env.example .env
 php artisan key:generate
+```
 
-# Run migrations
+### Run migrations
+```bash
 php artisan migrate
+```
 
-# Seed demo data
+### Seed demo data
+```bash
 php artisan db:seed
+```
+
+## Testing it out
+
+Once everything is set up, you can start the development server and test the API endpoints.
+
+```bash
+php artisan serve
+```
+
+You can now access the API at `http://localhost:8000/api`.
+
+## Resources
+
+- [API Platform for Laravel](https://api-platform.com/docs/laravel/)
+  - [Customising the API](https://api-platform.com/docs/laravel/#customizing-the-api)
+  - [Adding filters](https://api-platform.com/docs/laravel/#adding-filters)
+  - [Adding authentication](https://api-platform.com/docs/laravel/#authentication)
+- [Parameters & filters](https://api-platform.com/docs/laravel/filters/)
