@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-use App\Models\Game;
 use App\Models\Collection;
+use App\Models\Game;
 use App\Models\Review;
+use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
         Review::factory(50)->create();
 
         $this->call([
-            GameCollectionSeeder::class
+            GameCollectionSeeder::class,
         ]);
     }
 }

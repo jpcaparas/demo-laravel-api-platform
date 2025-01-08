@@ -13,8 +13,8 @@ use Illuminate\Notifications\Notifiable;
 
 #[ApiResource(
     operations: [
-        new GetCollection(),
-        new Get(),
+        new GetCollection,
+        new Get,
     ]
 )]
 class User extends Authenticatable

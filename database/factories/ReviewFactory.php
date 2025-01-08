@@ -905,7 +905,7 @@ class ReviewFactory extends Factory
                 'The game is very relaxing and calming.',
                 'The game is very stressful and frustrating.',
                 'The game is very educational and informative.',
-                'The game is very mindless and pointless.'
+                'The game is very mindless and pointless.',
             ]),
             'user_id' => \App\Models\User::factory(),
             'game_id' => \App\Models\Game::factory(),

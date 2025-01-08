@@ -637,7 +637,7 @@ class CollectionFactory extends Factory
                 'Mind-Groundbreaking Thinking Games',
                 'Mind-Revolutionary Thinking Games',
                 'Mind-Transformative Thinking Games',
-                'Mind-Disruptive Thinking Games'
+                'Mind-Disruptive Thinking Games',
             ]),
             'description' => $this->faker->sentence,
             'user_id' => User::factory(),
