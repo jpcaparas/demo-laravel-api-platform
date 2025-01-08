@@ -18,10 +18,10 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
 
-        Game::factory(10)->create();
+        Game::factory(50)->create();
 
-        Collection::factory(10)->create();
+        Collection::factory(50)->create();
 
-        Review::factory(10)->create();
+        Review::factory(50)->create();
     }
 }
