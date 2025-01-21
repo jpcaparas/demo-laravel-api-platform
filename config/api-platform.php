@@ -5,8 +5,8 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 
 return [
-    'title' => 'API Platform',
-    'description' => 'My awesome API',
+    'title' => 'My Game Collection API',
+    'description' => 'This is a RESTful API for my game library.',
     'version' => '1.0.0',
 
     'routes' => [
@@ -19,7 +19,8 @@ return [
     ],
 
     'formats' => [
-        'jsonld' => ['application/ld+json'],
+        'json' => ['application/json'],
+        // 'jsonld' => ['application/ld+json'],
         // 'jsonapi' => ['application/vnd.api+json'],
         // 'csv' => ['text/csv'],
     ],
