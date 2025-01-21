@@ -56,6 +56,10 @@ sail artisan migrate --seed
 sail artisan passport:keys --force
 ```
 
+### Register for an account
+
+Go to http://localhost/register and create a new account. This will be used for PKCE OAuth 2.0 authentication.
+
 ### Generate a new Laravel Passport PKCE OAuth 2.0 client
 
 (To learn more about PKCE, see [OAuth 2.0 for Browser-Based Apps](https://laravel.com/docs/11.x/passport#code-grant-pkce))
@@ -63,12 +67,22 @@ sail artisan passport:keys --force
 ELI12: _PKCE is like having a secret handshake that changes every time you meet - you make up a special code, scramble it before sending it to your friend, then prove it's really you by showing you know the original code that makes that scrambled version! 🤝✨_
 
 ```bash
-sail artisan passport:client --public --redirect_uri=http://localhost/vendor/api-platform/swagger-ui/oauth2-redirect.html
+sail artisan passport:client --public --name=PKCE_CLIENT --redirect_uri=http://localhost/vendor/api-platform/swagger-ui/oauth2-redirect.html
 ```
+
+(When prompted to enter the user ID of the user to associate with the client, leave it blank so the client can be associated with all users.)
 
 ## Testing it out
 
 You can now access the API at `http://localhost/api`.
+
+However, since the routes are protected by authentication, you won't be able to access them directly. You'll need to use the Swagger UI to authenticate and access the API.
+
+On the upper right, click the Authorize button and enter `1` as the PKCE client ID. No need to enter a client secret.  
+
+It will prompt you to log in with the account you created earlier.  
+
+This will create a PKCE OAuth 2.0 token (secret-less) that you can use to access the API.
 
 ## Wrapping up
 
