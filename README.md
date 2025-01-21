@@ -8,6 +8,16 @@ API Platform is a powerful and flexible API framework that allows you to build m
 
 For example, if you want to expose a set of CRUD operations for a resource, you can do so with just a few lines of code. API Platform will automatically generate the necessary routes, controllers, and responses for you.
 
+Simply adding an `ApiResource` attribute to an existing model (e.g. `Game`)
+
+![image](https://github.com/user-attachments/assets/354d98af-81ef-4996-87ef-6d202be69fd7)
+
+... will expose full CRUD operations for it out of the box:
+
+<img width="962" alt="image" src="https://github.com/user-attachments/assets/ea5ffbdf-abe3-4d81-9200-bd15c94233a7" />
+
+There's more you can do (e.g. exposing only certain routes, using state transformers/providers) by reading [the documentation](https://api-platform.com/docs/laravel/).
+
 ## Features
 
 - [x] RESTful API endpoints for managing video games
