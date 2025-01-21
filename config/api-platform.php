@@ -81,7 +81,7 @@ return [
         //],
         // To generate a `authorization code grant` client, run:
         // `php artisan passport:client --redirect_uri="http://localhost/vendor/api-platform/swagger-ui/oauth2-redirect.html"`
-        // ... alternatively, you can also use the `php artisan passport:client --public` command for PKCE verification (which doesn't involve a client secret).
+        // ... alternatively, you can also use the `php artisan passport:client --public --redirect_uri=http://localhost/vendor/api-platform/swagger-ui/oauth2-redirect.html` command for PKCE verification (which doesn't involve a client secret).
         // DO NOT run `php artisan passport:client --personal` or `php artisan passport:client --password` as both client types not work with Swagger UI. It only accepts `authorization code grant` clients.
         'oauth' => [
            'enabled' => true,
@@ -90,7 +90,6 @@ return [
            'tokenUrl' => '/oauth/token',
            'authorizationUrl' =>'/oauth/authorize',
            'refreshUrl' => '/oauth/token/refresh',
-           'scopes' => ['read' => 'Read data', 'write' => 'Write data'],
            'pkce' => true,
         ],
         //'license' => [

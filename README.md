@@ -56,6 +56,16 @@ sail artisan migrate --seed
 sail artisan passport:keys --force
 ```
 
+### Generate a new Laravel Passport PKCE OAuth 2.0 client
+
+(To learn more about PKCE, see [OAuth 2.0 for Browser-Based Apps](https://laravel.com/docs/11.x/passport#code-grant-pkce))
+
+ELI12: _PKCE is like having a secret handshake that changes every time you meet - you make up a special code, scramble it before sending it to your friend, then prove it's really you by showing you know the original code that makes that scrambled version! 🤝✨_
+
+```bash
+sail artisan passport:client --public --redirect_uri=http://localhost/vendor/api-platform/swagger-ui/oauth2-redirect.html
+```
+
 ## Testing it out
 
 You can now access the API at `http://localhost/api`.
