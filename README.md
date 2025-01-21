@@ -17,11 +17,8 @@ This is a demo Laravel application (running on [Laravel Sail](https://laravel.co
 
 ## Requirements
 
-- Docker w/ Laravel Sail
-- PHP 8.2 or higher
-- Composer
-- Laravel 11.x
-- Database (MySQL by default)
+- [Docker](https://docs.docker.com/) w/ [Compose](https://docs.docker.com/compose/)
+- [Composer](https://getcomposer.org/)
 
 ## Setup
 
