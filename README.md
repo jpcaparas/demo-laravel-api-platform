@@ -1,4 +1,4 @@
-<p align="center">![image](https://github.com/user-attachments/assets/c6743634-a94a-4808-9648-ac739b270353)</p>
+<p align="center"><img src="https://github.com/user-attachments/assets/c6743634-a94a-4808-9648-ac739b270353" width="600" /></p>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://api-platform.com/docs/laravel/images/empty-docs.png" width="600" alt="API Platform example"></a></p>
 
