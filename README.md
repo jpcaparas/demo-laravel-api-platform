@@ -53,7 +53,7 @@ sail artisan migrate --seed
 
 ### Generate a new Laravel Passport key pair
 ```bash
-sail artisan passport:keys
+sail artisan passport:keys --force
 ```
 
 ## Testing it out
