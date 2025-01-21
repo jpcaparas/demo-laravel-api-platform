@@ -49,7 +49,7 @@ return [
         'pagination_items_per_page' => 30,
         'pagination_maximum_items_per_page' => 30,
         'route_prefix' => '/api',
-        'middleware' => [],
+        'middleware' => ['auth:api'],
     ],
 
     'pagination' => [
@@ -72,32 +72,36 @@ return [
 
     'swagger_ui' => [
         'enabled' => true,
-        // 'apiKeys' => [
+        //'apiKeys' => [
         //    'api' => [
         //        'type' => 'Bearer',
         //        'name' => 'Authentication Token',
         //        'in' => 'header'
         //    ]
-        // ],
-        // 'oauth' => [
-        //    'enabled' => true,
-        //    'type' => 'oauth2',
-        //    'flow' => 'authorizationCode',
-        //    'tokenUrl' => '',
-        //    'authorizationUrl' =>'',
-        //    'refreshUrl' => '',
-        //    'scopes' => ['scope1' => 'Description scope 1'],
-        //    'pkce' => true
-        // ],
-        // 'license' => [
+        //],
+        // To generate a `authorization code grant` client, run:
+        // `php artisan passport:client --redirect_uri="http://localhost/vendor/api-platform/swagger-ui/oauth2-redirect.html"`
+        // ... alternatively, you can also use the `php artisan passport:client --public` command for PKCE verification (which doesn't involve a client secret).
+        // DO NOT run `php artisan passport:client --personal` or `php artisan passport:client --password` as both client types not work with Swagger UI. It only accepts `authorization code grant` clients.
+        'oauth' => [
+           'enabled' => true,
+           'type' => 'oauth2',
+           'flow' => 'authorizationCode',
+           'tokenUrl' => '/oauth/token',
+           'authorizationUrl' =>'/oauth/authorize',
+           'refreshUrl' => '/oauth/token/refresh',
+           'scopes' => ['read' => 'Read data', 'write' => 'Write data'],
+           'pkce' => true,
+        ],
+        //'license' => [
         //    'name' => 'Apache 2.0',
         //    'url' => 'https://www.apache.org/licenses/LICENSE-2.0.html',
-        // ],
-        // 'contact' => [
+        //],
+        //'contact' => [
         //    'name' => 'API Support',
         //    'url' => 'https://www.example.com/support',
         //    'email' => 'support@example.com',
-        // ],
+        //],
     ],
 
     'url_generation_strategy' => UrlGeneratorInterface::ABS_PATH,
