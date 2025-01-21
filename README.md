@@ -4,6 +4,10 @@
 
 This is a demo Laravel application (running on [Laravel Sail](https://laravel.com/docs/11.x/sail) for isolation) showcasing how to build a RESTful API for managing video game collections using [API Platform](https://api-platform.com/docs/laravel/) and Laravel.
 
+API Platform is a powerful and flexible API framework that allows you to build modern APIs in PHP with absolute ease. It removes the endless boilerplate code and provides a set of tools to help you build APIs faster and more efficiently.
+
+For example, if you want to expose a set of CRUD operations for a resource, you can do so with just a few lines of code. API Platform will automatically generate the necessary routes, controllers, and responses for you.
+
 ## Features
 
 - [x] RESTful API endpoints for managing video games
