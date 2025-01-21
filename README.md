@@ -11,7 +11,7 @@ This is a demo Laravel application (running on [Laravel Sail](https://laravel.co
 - [x] Game entity with properties like title, description, collection, reviews, and release date
 - [x] Full CRUD operations
 - [x] API documentation via OpenAPI/Swagger
-- [ ] Authentication and authorization
+- [x] oAuth 2.0 PKCE authentication
 
 ## Requirements
 
@@ -76,13 +76,23 @@ sail artisan passport:client --public --name=PKCE_CLIENT --redirect_uri=http://l
 
 You can now access the API at `http://localhost/api`.
 
-However, since the routes are protected by authentication, you won't be able to access them directly. You'll need to use the Swagger UI to authenticate and access the API.
+However, since the routes are protected by authentication, you won't be able to access them directly. 
 
-On the upper right, click the Authorize button and enter `1` as the PKCE client ID. No need to enter a client secret.  
+![image](https://github.com/user-attachments/assets/b55c9548-b37a-4e82-afed-a2784b79d213)
+
+You'll need to use the Swagger UI to authenticate and access the API.
+
+On the upper right, click the Authorize button and enter `1` as the PKCE client ID. No need to enter a client secret.
+
+![image](https://github.com/user-attachments/assets/1581f496-565c-4866-bce0-e0ceca33d5cb)
 
 It will prompt you to log in with the account you created earlier.  
 
 This will create a PKCE OAuth 2.0 token (secret-less) that you can use to access the API.
+
+The token is then automatically appended as a auth header to every request made on the Swagger UI to give you access to the protected API routes:
+
+![image](https://github.com/user-attachments/assets/5fed136d-7d25-4369-a14c-0d2d2b861afa)
 
 ## Wrapping up
 
