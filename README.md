@@ -1,6 +1,4 @@
-<p align="center"><img src="https://github.com/user-attachments/assets/c6743634-a94a-4808-9648-ac739b270353" width="600" /></p>
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://api-platform.com/docs/laravel/images/empty-docs.png" width="600" alt="API Platform example"></a></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/3a755e21-d888-43de-aa6f-5e01fd680858" /></p>
 
 # API Platform for Laravel Demo (Game Collection)
 
