@@ -4,7 +4,7 @@
 
 # API Platform for Laravel Demo (Game Collection)
 
-This is a demo Laravel application showcasing how to build a RESTful API for managing video game collections using [API Platform](https://api-platform.com/docs/laravel/) and Laravel.
+This is a demo Laravel application (running on [Laravel Sail](https://laravel.com/docs/11.x/sail) for isolation) showcasing how to build a RESTful API for managing video game collections using [API Platform](https://api-platform.com/docs/laravel/) and Laravel.
 
 ## Features
 
@@ -14,10 +14,10 @@ This is a demo Laravel application showcasing how to build a RESTful API for man
 - [x] Full CRUD operations
 - [x] API documentation via OpenAPI/Swagger
 - [ ] Authentication and authorization
-- [ ] Pagination and filtering
 
 ## Requirements
 
+- Docker w/ Laravel Sail
 - PHP 8.2 or higher
 - Composer
 - Laravel 11.x
@@ -31,35 +31,39 @@ git clone https://github.com/jpcaparas/demo-laravel-api-platform.git
 ```
 
 ### Install dependencies
+```bash
+cp .env.example .env
 ```
+
+```bash
 composer install
+```
+
+### Start the web and DB containers
+```bash
+sail up
 ```
 
 ### Configure environment
 ```bash
-cp .env.example .env
-php artisan key:generate
+sail artisan key:generate
 ```
 
 ### Run migrations
 ```bash
-php artisan migrate
-```
-
-### Seed demo data
-```bash
-php artisan db:seed
+sail artisan migrate --seed
 ```
 
 ## Testing it out
 
-Once everything is set up, you can start the development server and test the API endpoints.
+You can now access the API at `http://localhost/api`.
 
+## Wrapping up
+
+### Stopping the containers
 ```bash
-php artisan serve
+sail down --volumes
 ```
-
-You can now access the API at `http://localhost:8000/api`.
 
 ## Resources
 

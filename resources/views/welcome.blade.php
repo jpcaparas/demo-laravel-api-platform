@@ -72,7 +72,7 @@
                                 <p class="text-sm/relaxed">
                                     This is a demo Laravel application showcasing how to build a RESTful API for managing video game collections using API Platform and Laravel.
                                 </p>
-                                
+
                                 <div class="mt-4">
                                     <h2 class="text-xl font-semibold text-black dark:text-white">Key Features</h2>
                                     <ul class="mt-4 list-disc pl-5 text-sm/relaxed">
@@ -83,7 +83,6 @@
                                         <li>Full CRUD operations</li>
                                         <li>API documentation via OpenAPI/Swagger</li>
                                         <li>Authentication and authorization</li>
-                                        <li>Pagination and filtering</li>
                                     </ul>
                                 </div>
                             </div>
