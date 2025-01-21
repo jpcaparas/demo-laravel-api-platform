@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center">![image](https://github.com/user-attachments/assets/c6743634-a94a-4808-9648-ac739b270353)</p>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://api-platform.com/docs/laravel/images/empty-docs.png" width="600" alt="API Platform example"></a></p>
 
