@@ -49,6 +49,13 @@ sail artisan key:generate
 sail artisan migrate --seed
 ```
 
+## Authentication
+
+### Generate a new Laravel Passport key pair
+```bash
+sail artisan passport:keys
+```
+
 ## Testing it out
 
 You can now access the API at `http://localhost/api`.
