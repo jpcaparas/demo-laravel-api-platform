@@ -82,7 +82,7 @@ However, since the routes are protected by authentication, you won't be able to 
 
 You'll need to use the Swagger UI to authenticate and access the API.
 
-On the upper right, click the Authorize button and enter `1` as the PKCE client ID. No need to enter a client secret.
+On the top right of the Swagger UI, click the _Authorize_ button and enter `1` as the PKCE client ID (the one we created earlier). No need to enter a client secret.
 
 ![image](https://github.com/user-attachments/assets/1581f496-565c-4866-bce0-e0ceca33d5cb)
 
