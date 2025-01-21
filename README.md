@@ -86,6 +86,10 @@ sail artisan passport:client --public --name=PKCE_CLIENT --redirect_uri=http://l
 
 (When prompted to enter the user ID of the user to associate with the client, leave it blank so the client can be associated with all users.)
 
+You'll end up with this record in your `oauth_clients` table:
+
+![image](https://github.com/user-attachments/assets/4e5ff4ac-5692-4efb-862d-932e106c5501)
+
 ## Testing it out
 
 You can now access the API at `http://localhost/api`.
