@@ -46,6 +46,8 @@ cp .env.example .env
 
 ```bash
 composer install
+npm install
+npm run build
 ```
 
 ### Start the web and DB containers
